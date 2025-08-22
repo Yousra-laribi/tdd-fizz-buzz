@@ -12,9 +12,9 @@
 
         [Theory]
         [InlineData(1, "1")]
-        [InlineData(3, "Fizz")]
-        [InlineData(5, "Buzz")]
-        [InlineData(15, "FizzBuzz")]
+        [InlineData(3, "FizzFizz")]
+        [InlineData(5, "BuzzBuzz")]
+        [InlineData(15, "FizzBuzzBuzz")]
         public void Should_Return_Correct_String(int input, string output)
         {
             var process = new FizzBuzz();

@@ -13,9 +13,17 @@
             var response = string.Empty;
             if (input % 3 == 0)
             {
-                response = FIZZ;
+                response = $"{response}{FIZZ}";
             }
             if (input % 5 == 0)
+            {
+                response = $"{response}{BUZZ}";
+            }
+            if (input.ToString().Contains('3'))
+            {
+                response = $"{response}{FIZZ}";
+            }
+            if (input.ToString().Contains('5'))
             {
                 response = $"{response}{BUZZ}";
             }
